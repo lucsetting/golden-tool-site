@@ -6,41 +6,23 @@
 <title>Terms & Conditions · Golden Tool</title>
 <meta name="description" content="Terms of purchase and use for Golden Tool.">
 <link rel="icon" href="assets/logo.png">
-<style>
-  :root { --paper:#FFFFFF; --ink:#0B0B0C; --muted:#6B6B6B; --line:#E6E6E6; --gold:#0B0B0C; }
-  * { box-sizing: border-box; }
-  body { margin:0; background:var(--paper); color:var(--ink); font: 16px/1.65 -apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text",Inter,"Segoe UI","Helvetica Neue",Arial,sans-serif; -webkit-font-smoothing: antialiased; }
-  a { color: var(--ink); text-decoration: underline; text-underline-offset: 3px; text-decoration-color: #B8B8BC; } a:hover { text-decoration-color: var(--ink); }
-  header { max-width: 860px; margin: 0 auto; padding: 28px 24px 0; display:flex; align-items:center; justify-content:space-between; gap: 16px; }
-  .brand { display:flex; align-items:center; gap:10px; color:var(--ink); font-weight:500; }
-  .brand img { width: 28px; height: 28px; }
-  .back { font-size: 14px; color: var(--muted); }
-  main { max-width: 860px; margin: 0 auto; padding: 40px 24px 80px; }
-  h1 { font: 600 40px/1.05 -apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text",Inter,"Segoe UI","Helvetica Neue",Arial,sans-serif; letter-spacing: -0.01em; margin: 0 0 10px; }
-  .updated { color: var(--muted); font-size: 14px; margin: 0 0 36px; padding-bottom: 20px; border-bottom: 1px solid var(--line); }
-  h2 { font: 600 22px/1.25 -apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text",Inter,"Segoe UI","Helvetica Neue",Arial,sans-serif; margin: 40px 0 10px; }
-  p, li { color: #2B2A26; }
-  ul, ol { padding-left: 22px; }
-  .box { background:#fff; border:1px solid var(--line); border-radius: 14px; padding: 20px 22px; margin: 18px 0; }
-  .row { display:flex; flex-wrap:wrap; gap: 6px 16px; padding: 9px 0; border-bottom: 1px solid var(--line); }
-  .row:last-child { border-bottom: 0; }
-  .row b { min-width: 210px; font-weight: 500; }
-  .row span { color: #2B2A26; }
-  .ph { background: #F3F3F3; color: #6B6B6B; padding: 0 4px; border-radius: 4px; }
-  footer { max-width: 860px; margin: 0 auto; padding: 24px; border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; display:flex; flex-wrap:wrap; gap: 10px 18px; }
-  footer a { color: var(--muted); }
-  @media (max-width: 480px) { h1 { font-size: 36px; } }
-</style>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header>
-  <a class="brand" href="./"><img src="assets/logo.png" alt=""> Golden Tool</a>
-  <a class="back" href="./">← Back to main site</a>
+<header class="hd">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="assets/logo.png" alt="" width="28" height="28">Golden Tool</a>
+    <a class="back" href="./">Back to main site</a>
+  </div>
 </header>
-<main>
-<h1>Terms & Conditions</h1>
-<p class="updated">Last updated: November 9, 2026</p>
-
+<main class="sec legal">
+  <div class="wrap cols">
+    <div>
+      <span class="kicker">Legal</span>
+      <h1>Terms & Conditions</h1>
+      <p class="updated">Last updated: November 9, 2026</p>
+    </div>
+    <div class="legal-body">
 <h2>1. Agreement</h2>
 <p>These terms govern your purchase and use of Golden Tool, a web application and website operated by Nevian Enterprise LLC ("we"). By purchasing or using Golden Tool you agree to them.</p>
 <h2>2. The product</h2>
@@ -65,15 +47,25 @@
 <p>These terms are governed by the laws of the State of Wyoming, United States, without prejudice to mandatory consumer protections of your country of residence.</p>
 <h2>12. Contact</h2>
 <p><a href="mailto:office@nevian.io">office@nevian.io</a> · Nevian Enterprise LLC, 525 Randall Ave, Ste 100-865, Cheyenne, WY 82001, United States</p>
-
+    </div>
+  </div>
 </main>
-<footer>
-  <a href="privacy-policy.html">Privacy Policy</a>
-  <a href="terms.html">Terms &amp; Conditions</a>
-  <a href="imprint.html">Imprint</a>
-  <a href="refund-policy.html">Refund Policy</a>
-  <a href="support.html">Buyer Support</a>
-  <span>© 2026 Golden Tool. All rights reserved.</span>
+<footer class="ft">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="assets/logo.png" alt="" width="28" height="28">Golden Tool</a>
+    <p class="disc"><b>Disclaimer:</b> Golden Tool is an educational budgeting tool. It does not provide financial, investment, tax or legal advice. Results depend on your own use of the tool. This is a digital product — nothing is shipped.</p>
+    <nav aria-label="Legal">
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms.html">Terms &amp; Conditions</a>
+      <a href="imprint.html">Imprint</a>
+      <a href="refund-policy.html">Refund Policy</a>
+      <a href="support.html">Buyer Support</a>
+    </nav>
+    <div class="meta">
+      <p class="company">Golden Tool is a product of Nevian Enterprise LLC · Cheyenne, Wyoming</p>
+      <p>&copy; 2026 Nevian Enterprise LLC. All rights reserved.</p>
+    </div>
+  </div>
 </footer>
 </body>
 </html>
