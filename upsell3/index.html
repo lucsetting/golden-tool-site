@@ -10,7 +10,9 @@
 <link rel="stylesheet" href="../styles.css">
 <style>
   .up-head{display:flex;align-items:center;justify-content:space-between;gap:16px}
-  .steps-ind{font-size:13px;color:var(--muted)}
+  .steps-ind{font-size:13px;color:var(--muted);white-space:nowrap}
+  .brand span{white-space:nowrap}
+  @media(max-width:600px){.steps-ind .g{display:none}}
   .up-grid{display:grid;gap:40px;align-items:start;margin-top:40px}
   @media(min-width:900px){.up-grid{grid-template-columns:1fr 1.15fr;gap:72px}}
   .up-shot{border:1px solid var(--line);border-radius:10px;overflow:hidden;background:#fff}
@@ -31,7 +33,7 @@
 <header class="hd">
   <div class="wrap up-head">
     <a class="brand" href="../"><img src="../assets/logo.png" alt="" width="28" height="28"><span>Golden Tool</span></a>
-    <span class="steps-ind">Order step 4 of 4 · 60-day money-back guarantee</span>
+    <span class="steps-ind">Order step 4 of 4<span class="g"> · 60-day money-back guarantee</span></span>
   </div>
 </header>
 
