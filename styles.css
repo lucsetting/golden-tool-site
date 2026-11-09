@@ -268,26 +268,34 @@ h3{font-size:22px;line-height:1.2;letter-spacing:-.015em}
 .card .note{margin-top:20px;padding-top:20px;border-top:1px solid rgba(255,255,255,.2);font-size:15px;color:rgba(255,255,255,.7)}
 .card .note b{color:#fff;font-weight:600}
 
-/* Upsell pages */
-.up-head{display:flex;align-items:center;justify-content:space-between;gap:16px}
-.steps-ind{font-size:14px;color:var(--muted);white-space:nowrap}
-.brand span{white-space:nowrap}
-@media(max-width:600px){.steps-ind .g{display:none}}
-.up-grid{display:grid;gap:40px;align-items:start;margin-top:32px}
-@media(min-width:900px){.up-grid{grid-template-columns:5fr 7fr;gap:var(--gx)}}
-.up-grid h1{font-size:clamp(38px,4.6vw,72px);line-height:1}
-.up-grid .lede{margin-top:22px}
-.up-shot{margin:0}
-.up-ledger{margin:32px 0 0;padding:0;list-style:none;border-top:1px solid var(--ink)}
-.up-ledger li{display:grid;grid-template-columns:170px 1fr;gap:16px;padding:16px 0;border-bottom:1px solid var(--line);font-size:16px}
-.up-ledger b{font-weight:600}
-.up-ledger span{color:var(--muted)}
-@media(max-width:480px){.up-ledger li{grid-template-columns:1fr;gap:4px}}
-.answer{margin-top:36px;display:flex;flex-direction:column;gap:16px;align-items:flex-start}
-.answer .no{font-size:15px;color:var(--muted);text-decoration:underline;text-underline-offset:3px}
-.answer .no:hover{color:var(--ink)}
-.price-tag{font-size:16px;color:var(--muted);margin-top:18px}
-.price-tag b{color:var(--ink);font-weight:600}
+/* Upsell pages: one offer, one card, grey page. Deliberately unlike the sales page. */
+.up{background:var(--well);min-height:100vh;display:flex;flex-direction:column}
+.up-top{display:flex;flex-direction:column;align-items:center;gap:20px;padding:40px 20px 28px}
+.up-top .brand{font-size:16px}
+.up-steps{display:flex;align-items:center;gap:14px;font-size:13px;color:var(--muted)}
+.up-steps i{display:flex;gap:5px}
+.up-steps i b{display:block;width:26px;height:3px;border-radius:2px;background:#D6D6DA}
+.up-steps i b.on{background:var(--ink)}
+.up-main{flex:1;padding:0 16px 48px}
+.up-card{max-width:680px;margin:0 auto;background:#fff;border:1px solid var(--line);border-radius:24px;padding:clamp(24px,4vw,44px);box-shadow:0 24px 60px -36px rgba(11,11,12,.25)}
+.up-card .kicker{margin-bottom:14px}
+.up-card h1{font-size:clamp(30px,4vw,42px);line-height:1.05;letter-spacing:-.03em}
+.up-card .lede{font-size:17px;line-height:1.5;margin-top:14px}
+.up-shot{margin:28px 0 0;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fff}
+.up-feats{list-style:none;margin:28px 0 0;padding:26px 0 0;border-top:1px solid var(--line);display:grid;gap:18px 28px}
+.up-feats b{display:block;font-weight:600;font-size:15px;letter-spacing:-.01em;margin-bottom:3px}
+.up-feats span{display:block;color:var(--muted);font-size:14px;line-height:1.45}
+@media(min-width:520px){.up-feats{grid-template-columns:1fr 1fr}}
+.up-price{margin-top:26px;padding-top:22px;border-top:1px solid var(--line);font-size:15px;color:var(--muted);line-height:1.5}
+.up-price b{color:var(--ink);font-weight:600;font-size:17px}
+.up-card .btn{width:100%;margin-top:24px;justify-content:center;gap:12px;white-space:normal;text-align:center;height:auto;min-height:58px;padding:16px 22px;line-height:1.25;font-size:17px}
+.up-no{display:block;text-align:center;margin-top:18px;font-size:15px;color:var(--muted);text-decoration:underline;text-underline-offset:3px}
+.up-no:hover{color:var(--ink)}
+.up-fine{text-align:center;max-width:560px;margin:22px auto 0;font-size:13px;color:var(--muted);line-height:1.5}
+.up-foot{display:flex;flex-wrap:wrap;justify-content:center;gap:8px 22px;padding:20px 16px 36px;font-size:13px;color:var(--muted)}
+.up-foot a{text-decoration:none;color:var(--muted)}
+.up-foot a:hover{color:var(--ink)}
+.up-ok{display:flex;align-items:center;justify-content:center;width:52px;height:52px;border-radius:50%;background:var(--ink);color:#fff;margin-bottom:24px}
 
 /* Grid children may not grow past the viewport. */
 .cols>*,.hero-row>*,.split>*,.price-grid>*,.ty-grid>*,.up-grid>*,.why-body>*,.steps>*,.list>*{min-width:0}
@@ -301,7 +309,7 @@ h3{font-size:22px;line-height:1.2;letter-spacing:-.015em}
 
 /* Long button labels wrap on phones instead of pushing the page sideways. */
 @media(max-width:600px){
-  .answer .btn,.hero-cta .btn{white-space:normal;text-align:left;height:auto;min-height:56px;padding-top:15px;padding-bottom:15px;line-height:1.25;max-width:100%}
+  .hero-cta .btn{white-space:normal;text-align:left;height:auto;min-height:56px;padding-top:15px;padding-bottom:15px;line-height:1.25;max-width:100%}
 }
 
 /* Legal pages */

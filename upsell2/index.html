@@ -6,55 +6,27 @@
 <title>Savings Goals — add it to your order · Golden Tool</title>
 <meta name="description" content="Add Savings Goals to your Golden Tool order.">
 <meta name="robots" content="noindex">
+<meta name="theme-color" content="#F5F5F7">
 <link rel="icon" href="../assets/logo.png">
 <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
-<header class="hd">
-  <div class="wrap up-head">
-    <a class="brand" href="../"><img src="../assets/logo.png" alt="" width="28" height="28"><span>Golden Tool</span></a>
-    <span class="steps-ind">Order step 3 of 4<span class="g"> · 60-day money-back guarantee</span></span>
-  </div>
-</header>
-
-<main class="sec" style="padding-top:clamp(40px,5vw,72px)">
-  <div class="wrap">
-    <span class="kicker">Give what is left a destination</span>
-    <div class="up-grid">
-      <div>
-        <h1>Turn &quot;someday&quot; into a number per month.</h1>
-        <p class="lede">Each goal tells you what to set aside this month to hit its date. Your emergency fund target comes from your real essential spending, not a rule of thumb.</p>
-        <ul class="up-ledger"><li><b>Goals with a deadline</b><span>vacation, car, cushion, each with a monthly figure</span></li><li><b>Emergency fund</b><span>3 or 6 months of your actual essentials</span></li><li><b>Safe to save</b><span>what you can move this month and still stay under the limit</span></li><li><b>Progress</b><span>add money in one tap</span></li></ul>
-        <p class="price-tag"><b>$37 one time</b>, added to your order. Unlocks in the app on the account you sign in with. Covered by the same 60-day guarantee.</p>
-        <div class="answer">
-          <a id="yes" class="btn" href="#">Yes, add Savings Goals — $37</a>
-          <a id="no" class="no" href="../upsell3/">No thanks, continue without goals</a>
-        </div>
-        <p class="fine" style="margin-top:22px">Clicking yes adds Savings Goals to the order you just placed, using the same payment method. No new checkout form.</p>
-      </div>
-      <figure class="up-shot frame"><img src="../assets/app-goals.png" alt="Savings Goals inside Golden Tool" width="1440" height="900" loading="eager"></figure>
-    </div>
-  </div>
-</main>
-
-<footer class="ft">
-  <div class="wrap">
-    <a class="brand" href="../"><img src="../assets/logo.png" alt="" width="28" height="28">Golden Tool</a>
-    <p class="disc"><b>Disclaimer:</b> Golden Tool is an educational budgeting tool. It does not provide financial, investment, tax or legal advice. Results depend on your own use of the tool. This is a digital product — nothing is shipped.</p>
-    <nav aria-label="Legal">
-      <a href="../privacy-policy.html">Privacy Policy</a>
-      <a href="../terms.html">Terms &amp; Conditions</a>
-      <a href="../imprint.html">Imprint</a>
-      <a href="../refund-policy.html">Refund Policy</a>
-      <a href="../support.html">Buyer Support</a>
-    </nav>
-    <div class="meta">
-      <p class="company">Golden Tool is a product of Nevian Enterprise LLC · Cheyenne, Wyoming</p>
-      <p>&copy; 2026 Nevian Enterprise LLC. All rights reserved.</p>
-    </div>
-  </div>
-</footer>
-
+<body class="up">
+<div class="up-top">
+  <a class="brand" href="../"><img src="../assets/logo.png" alt="" width="28" height="28">Golden Tool</a>
+  <div class="up-steps"><i><b class="on"></b><b class="on"></b><b class="on"></b><b></b></i><span>Order step 3 of 4</span></div>
+</div>
+<main class="up-main">
+  <section class="up-card">
+    <span class="kicker">One more thing before your access</span>
+    <h1>Turn &quot;someday&quot; into a number per month.</h1>
+    <p class="lede">Each goal tells you what to set aside this month to hit its date. Your emergency fund target comes from your real essential spending, not a rule of thumb.</p>
+    <figure class="up-shot"><img src="../assets/app-goals.png" alt="Savings Goals inside Golden Tool" width="1440" height="900" loading="eager"></figure>
+    <ul class="up-feats"><li><b>Goals with a deadline</b><span>vacation, car, cushion, each with a monthly figure</span></li><li><b>Emergency fund</b><span>3 or 6 months of your actual essentials</span></li><li><b>Safe to save</b><span>what you can move this month and still stay under the limit</span></li><li><b>Progress</b><span>add money in one tap</span></li></ul>
+    <p class="up-price"><b>$37 one time</b>, added to your order. Unlocks in the app on the account you sign in with. Covered by the same 60-day guarantee.</p>
+    <a id="yes" class="btn" href="#">Yes, add Savings Goals — $37</a>
+    <a id="no" class="up-no" href="../upsell3/">No thanks, continue without goals</a>
+  </section>
+  <p class="up-fine">Clicking yes adds Savings Goals to the order you just placed, using the same payment method. No new checkout form.</p>
 <script>
   // One-click answer links. ACCEPT/DECLINE are filled in when the payment platform is connected;
   // until then "yes" is a placeholder and "no" continues to the next step.
@@ -69,5 +41,14 @@
     if (DECLINE && sid) no.href = DECLINE.replace('{sid}', encodeURIComponent(sid));
   })();
 </script>
+</main>
+<footer class="up-foot">
+  <a href="../privacy-policy.html">Privacy Policy</a>
+  <a href="../terms.html">Terms &amp; Conditions</a>
+  <a href="../imprint.html">Imprint</a>
+  <a href="../refund-policy.html">Refund Policy</a>
+  <a href="../support.html">Buyer Support</a>
+  <span>&copy; 2026 Nevian Enterprise LLC</span>
+</footer>
 </body>
 </html>
