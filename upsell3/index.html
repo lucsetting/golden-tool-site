@@ -8,26 +8,6 @@
 <meta name="robots" content="noindex">
 <link rel="icon" href="../assets/logo.png">
 <link rel="stylesheet" href="../styles.css">
-<style>
-  .up-head{display:flex;align-items:center;justify-content:space-between;gap:16px}
-  .steps-ind{font-size:13px;color:var(--muted);white-space:nowrap}
-  .brand span{white-space:nowrap}
-  @media(max-width:600px){.steps-ind .g{display:none}}
-  .up-grid{display:grid;gap:40px;align-items:start;margin-top:40px}
-  @media(min-width:900px){.up-grid{grid-template-columns:1fr 1.15fr;gap:72px}}
-  .up-shot{border:1px solid var(--line);border-radius:10px;overflow:hidden;background:#fff}
-  .up-ledger{margin:28px 0 0;padding:0;list-style:none;border-top:1px solid var(--line)}
-  .up-ledger li{display:grid;grid-template-columns:150px 1fr;gap:16px;padding:14px 0;border-bottom:1px solid var(--line);font-size:15px}
-  .up-ledger b{font-weight:600}
-  .up-ledger span{color:var(--muted)}
-  @media(max-width:480px){.up-ledger li{grid-template-columns:1fr;gap:4px}}
-  .answer{margin-top:36px;display:flex;flex-direction:column;gap:14px;align-items:flex-start}
-  .answer .no{font-size:15px;color:var(--muted);text-decoration:underline;text-underline-offset:3px}
-  .answer .no:hover{color:var(--ink)}
-  .fine{color:var(--muted);font-size:13px;line-height:1.55}
-  .price-tag{font-size:15px;color:var(--muted);margin-top:14px}
-  .price-tag b{color:var(--ink);font-weight:600}
-</style>
 </head>
 <body>
 <header class="hd">
@@ -37,22 +17,22 @@
   </div>
 </header>
 
-<main class="sec">
+<main class="sec" style="padding-top:clamp(40px,5vw,72px)">
   <div class="wrap">
     <span class="kicker">Last step</span>
     <div class="up-grid">
       <div>
-        <h1 style="font-size:clamp(34px,4.4vw,52px);line-height:1.05">A cap per category, and the whole year on one screen.</h1>
-        <p class="lede" style="margin-top:20px;font-size:18px;color:var(--muted)">Set a cap for groceries, dining or shopping and the bar turns red before you cross it. See twelve months side by side and export everything to a spreadsheet whenever you want.</p>
+        <h1>A cap per category, and the whole year on one screen.</h1>
+        <p class="lede">Set a cap for groceries, dining or shopping and the bar turns red before you cross it. See twelve months side by side and export everything to a spreadsheet whenever you want.</p>
         <ul class="up-ledger"><li><b>Category budgets</b><span>caps with a warning before you overspend</span></li><li><b>Yearly report</b><span>twelve months, total and average</span></li><li><b>CSV export</b><span>every expense, ready for Excel or Sheets</span></li><li><b>Monthly summary</b><span>what changed, in plain English</span></li></ul>
         <p class="price-tag"><b>$27 one time</b>, added to your order. Unlocks in the app on the account you sign in with. Covered by the same 60-day guarantee.</p>
         <div class="answer">
-          <a id="yes" class="btn btn-gold" href="#">Yes, add Reports &amp; Budgets — $27</a>
+          <a id="yes" class="btn" href="#">Yes, add Reports &amp; Budgets — $27</a>
           <a id="no" class="no" href="../thank-you/">No thanks, take me to my access</a>
         </div>
         <p class="fine" style="margin-top:22px">Clicking yes adds Reports &amp; Budgets to the order you just placed, using the same payment method. No new checkout form.</p>
       </div>
-      <figure class="up-shot" style="margin:0"><img src="../assets/app-reports.png" alt="Reports &amp; Budgets inside Golden Tool" width="1440" height="900" loading="eager"></figure>
+      <figure class="up-shot frame"><img src="../assets/app-reports.png" alt="Reports &amp; Budgets inside Golden Tool" width="1440" height="900" loading="eager"></figure>
     </div>
   </div>
 </main>
@@ -68,8 +48,10 @@
       <a href="../refund-policy.html">Refund Policy</a>
       <a href="../support.html">Buyer Support</a>
     </nav>
-    <p class="company">Golden Tool is a product of Nevian Enterprise LLC · Cheyenne, Wyoming</p>
-    <p>&copy; 2026 Nevian Enterprise LLC. All rights reserved.</p>
+    <div class="meta">
+      <p class="company">Golden Tool is a product of Nevian Enterprise LLC · Cheyenne, Wyoming</p>
+      <p>&copy; 2026 Nevian Enterprise LLC. All rights reserved.</p>
+    </div>
   </div>
 </footer>
 
