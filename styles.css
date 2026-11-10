@@ -235,7 +235,10 @@ h3{font-size:22px;line-height:1.2;letter-spacing:-.015em}
 .ft nav{display:flex;flex-direction:column;gap:12px}
 .ft nav a{text-decoration:none;color:var(--ink);font-size:15px;transition:color var(--t)}
 .ft nav a:hover{color:var(--muted)}
-.ft .meta{display:grid;gap:6px}
+.ft .meta{display:grid;gap:20px}
+.ft .company{display:grid;gap:4px;font-style:normal;font-size:15px;color:var(--ink-2)}
+.ft .company b{font-size:17px;font-weight:600;color:var(--ink);letter-spacing:-.015em}
+.ft .company a{color:var(--ink);justify-self:start}
 @media(min-width:900px){
   .ft{padding-bottom:clamp(48px,6vw,96px)}
   .ft .wrap{grid-template-columns:3fr 6fr 3fr;gap:var(--gx);align-items:start}
