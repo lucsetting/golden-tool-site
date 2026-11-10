@@ -54,7 +54,7 @@
   <div class="hero-shots">
     <div class="inner">
       <div class="frame">
-        <img src="assets/app-home.png" alt="Golden Tool dashboard on desktop: monthly limit, amount spent, safe to spend today, and a breakdown of where the money went" width="1440" height="900" loading="eager" fetchpriority="high">
+        <img src="assets/app-home.png" alt="Golden Tool home screen on desktop: amount spent, amount left, safe to spend today, cash flow, and the month's spending against the limit pace" width="1440" height="900" loading="eager" fetchpriority="high">
       </div>
       <div class="phone">
         <img src="assets/app-mobile-home.png" alt="Golden Tool home screen on a phone" width="390" height="844" loading="eager">
@@ -91,22 +91,23 @@
     <span class="kicker">The dashboard</span>
     <h2 style="max-width:16ch">One screen that tells you the truth about this month.</h2>
     <div class="figures">
-      <div><b>$182</b><span>safe to spend today</span></div>
-      <div><b>$158</b><span>under pace this month</span></div>
-      <div><b>27%</b><span>of the limit used by the 9th</span></div>
+      <div><b>$62</b><span>safe to spend today</span></div>
+      <div><b>$122</b><span>under pace this month</span></div>
+      <div><b>60%</b><span>of the limit used by the 10th</span></div>
     </div>
     <div class="split">
       <div>
         <p class="lede">Open it in the morning and you know your situation before your first purchase.</p>
         <dl class="ledger" style="margin-top:32px">
-          <div><dt>Spent so far</dt><dd>Running total against your monthly limit, with a pace bar.</dd></div>
+          <div><dt>Spent so far</dt><dd>Running total against your monthly limit, with your pace beside it.</dd></div>
           <div><dt>Safe to spend</dt><dd>What you can spend today and still finish the month inside the limit.</dd></div>
-          <div><dt>Where it went</dt><dd>Housing, bills, transport, dining, shopping. Amounts and percentages.</dd></div>
-          <div><dt>Insights</dt><dd>Spending by weekday, biggest purchase, average per expense, no-spend days.</dd></div>
+          <div><dt>Due soon</dt><dd>Bills in the next seven days and the budgets closest to their cap.</dd></div>
+          <div><dt>Where it went</dt><dd>Every category and merchant, compared with last month.</dd></div>
+          <div><dt>Insights</dt><dd>Six months against your limit, spending by weekday, biggest expense, no-spend days.</dd></div>
         </dl>
       </div>
       <div class="frame">
-        <img src="assets/app-insights.png" alt="Golden Tool insights screen: spending by category, by weekday, biggest purchase and no-spend days" width="1440" height="900" loading="lazy">
+        <img src="assets/app-insights.png" alt="Golden Tool insights screen: this month against last month, six months against the limit, spending by category and top merchants" width="1440" height="900" loading="lazy">
       </div>
     </div>
   </div>
@@ -122,7 +123,7 @@
       <li><span class="n">3</span><h3>Watch your pace</h3><p>The dashboard shows if you're ahead or behind, and what's safe to spend today.</p></li>
     </ol>
     <div class="frame shot-wide">
-      <img src="assets/app-add-expense.png" alt="Adding an expense in Golden Tool: amount, category and note" width="1440" height="900" loading="lazy">
+      <img src="assets/app-add-expense.png" alt="Adding an expense in Golden Tool: amount, name, category, date and tags" width="1440" height="900" loading="lazy">
     </div>
   </div>
 </section>
@@ -136,12 +137,20 @@
       <li><b>Safe to spend today</b><span>recalculated every day</span></li>
       <li><b>5-second expense logging</b><span>with categories and notes</span></li>
       <li><b>Where it went</b><span>breakdown by category</span></li>
-      <li><b>Insights</b><span>by weekday, averages, no-spend days</span></li>
+      <li><b>Category budgets</b><span>a cap per category, with a bar that fills as you spend</span></li>
+      <li><b>Bills and subscriptions</b><span>added on their day, with what is due next</span></li>
+      <li><b>Income and cash flow</b><span>what came in, what went out, what is left</span></li>
+      <li><b>Bank statement import</b><span>bring in a CSV file; rows you already have are skipped</span></li>
+      <li><b>Your own categories and tags</b><span>group a trip or a project across categories</span></li>
+      <li><b>Category rules</b><span>a store goes to the category you picked last time</span></li>
+      <li><b>Weekly recap</b><span>the last seven days against the seven before</span></li>
+      <li><b>Streak</b><span>days in a row at or under your limit pace</span></li>
+      <li><b>Insights</b><span>by weekday, by merchant, month against month</span></li>
       <li><b>Activity history</b><span>every expense, searchable by month</span></li>
       <li><b>Phone and computer</b><span>synced to your account</span></li>
       <li><b>Home-screen install</b><span>opens like an app, no store needed</span></li>
     </ul>
-    <p class="fine">Optional add-ons inside the app: Golden Freedom (debt payoff), Golden Goals (savings) and Golden Vision (reports and budgets). Lifetime Access is available at checkout.</p>
+    <p class="fine">Optional add-ons inside the app: Golden Freedom (debt payoff plan), Golden Goals (savings goals) and Golden Vision (trends, net worth and yearly report). Lifetime Access is available at checkout.</p>
     <div class="frame shot-wide">
       <img src="assets/app-activity.png" alt="Golden Tool activity screen listing every expense of the month" width="1440" height="900" loading="lazy">
     </div>
@@ -188,8 +197,8 @@
       <h2>We wanted one number, and nothing else wanted to give it to us.</h2>
     </div>
     <div class="why-body">
-      <p>We built Golden Tool for ourselves first. Every budgeting app we tried kept getting heavier: bank logins, forecast tabs, subscription tiers, notifications about notifications. What we actually opened the app for was a single question: how much can I spend today and still be fine at the end of the month?</p>
-      <p>So we made a tool that answers that question and stays out of the way. You set a limit, you write down what you spend, and the dashboard does the arithmetic. That's the whole product, and we intend to keep it that way.</p>
+      <p>We built Golden Tool for ourselves first. Every budgeting app we tried kept getting heavier: bank logins, subscription tiers, notifications about notifications. What we actually opened the app for was a single question: how much can I spend today and still be fine at the end of the month?</p>
+      <p>So we made a tool that answers that question and stays out of the way. You set a limit, you write down what you spend, and the dashboard does the arithmetic. That's the core of the product, and we intend to keep it that way. Budgets, bills and the rest are there when you want them.</p>
       <p class="sign">Nevian Enterprise LLC, Cheyenne, Wyoming</p>
     </div>
   </div>
@@ -212,7 +221,7 @@
       </details>
       <details>
         <summary>Is my data private?</summary>
-        <p>Your expenses are stored in your own account, protected by your email and password. Golden Tool does not connect to your bank and has no access to your accounts. You enter what you choose to enter.</p>
+        <p>Your expenses are stored in your own account, protected by your email and password. Golden Tool does not connect to your bank and has no access to your accounts. You enter what you choose to enter. If you import a statement file from your bank, it is read in your browser, and only the rows you choose are saved to your account.</p>
       </details>
       <details>
         <summary>What if I skip a day?</summary>
@@ -220,7 +229,7 @@
       </details>
       <details>
         <summary>What are the add-ons?</summary>
-        <p>Three optional extras inside the app: Golden Freedom (debt payoff planner), Golden Goals (savings goals) and Golden Vision (reports and budgets). The core tool works without them. Lifetime Access can be added at checkout so your access doesn't end after 12 months.</p>
+        <p>Three optional extras inside the app: Golden Freedom (debt payoff plan, what-if and payment log), Golden Goals (savings goals, automatic plan and challenges) and Golden Vision (trends, net worth and yearly report). Category budgets, bills and cash flow are part of the core tool. The core tool works without them. Lifetime Access can be added at checkout so your access doesn't end after 12 months.</p>
       </details>
       <details>
         <summary>How do refunds work?</summary>
