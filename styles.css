@@ -332,7 +332,7 @@ h3{font-size:22px;line-height:1.2;letter-spacing:-.015em}
 .legal-body{font-size:17px;line-height:1.6;color:var(--ink-2);max-width:72ch}
 .legal-body>p:first-child{font-size:clamp(18px,1.4vw,22px);line-height:1.45;color:var(--ink);letter-spacing:-.01em}
 .legal-body h2{font-size:22px;line-height:1.25;letter-spacing:-.02em;color:var(--ink);margin:44px 0 12px;padding-top:28px;border-top:1px solid var(--line);text-wrap:balance}
-.legal-body p+p{margin-top:14px}
+.legal-body p+p,.legal-body ul+p,.legal-body ol+p{margin-top:14px}
 .legal-body ul,.legal-body ol{margin:12px 0 0;padding-left:22px}
 .legal-body li+li{margin-top:6px}
 .legal-body a{color:var(--ink);text-decoration:underline;text-underline-offset:3px;text-decoration-color:#B8B8BC}
