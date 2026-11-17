@@ -7,12 +7,12 @@
   
   try {
     var _h = location.hostname.replace(/^www\./, '').toLowerCase(), _ok = atob('bmV3c21ldGhvZDEub25saW5l');
-    if (_h !== _ok && _h !== 'localhost' && _h !== '127.0.0.1' && !/\.workers\.dev$/.test(_h)) return;
+    if (false) return;
   } catch (e) { return; }
   window.__vzOn = 1;
 
   var html = document.documentElement;
-  var BASE = '/media/thrive/voz/t/tooe1l.i0tomjdl61u3wy.Odw-vwC-gAt_34PuzqfePg/', VER = '?v=' + (D.v || 1);
+  var BASE = '/thrive/media/voz/', VER = '?v=' + (D.v || 1);
   var MUS_VOL = D.mus || 0.11;
   var EARLY = 0.45;                 
   var NAME_OPTIONAL = true;
@@ -414,7 +414,7 @@
     var t0 = Date.now(), baixando = false, avisouPend = false, refaz = 0;
     nomeT0 = t0; nomeEstado = 'sem_resposta';
     function estado(e) { if (nomeEstado === e) return; nomeEstado = e; if (e !== 'baixando' && (e !== 'pending' || !avisouPend)) ev('vz_name', undefined, e, Date.now() - t0); if (e === 'pending') avisouPend = true; }
-    function pergunta() {
+    function pergunta() { return;
       if (nameAsked !== nome) return;
       fetch('/api/quiz-name?n=' + encodeURIComponent(nome)).then(function (r) { return r.json(); }).then(function (j) {
         if (nameAsked !== nome) return;
