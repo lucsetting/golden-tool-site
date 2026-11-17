@@ -49,7 +49,7 @@
 
   
   var CSS = [
-    'html.vz,html.vz body{height:100%;background:#000;overflow:hidden}',
+    'html.vz{height:100%;background:linear-gradient(rgba(6,4,2,.74),rgba(6,4,2,.74)),url('/thrive/media/thrive/background.jpg') center center/cover fixed #000;overflow:hidden}html.vz body{height:100%;background:transparent;overflow:hidden}',
     
     '#vzSeed{position:fixed;left:0;top:0;width:100%;height:100%;height:100dvh;border:0;z-index:2147483000;opacity:0;visibility:hidden;pointer-events:none;background:#000;transition:opacity .45s ease}',
     'html.vz-vsl #vzSeed{opacity:1;visibility:visible;pointer-events:auto}',
