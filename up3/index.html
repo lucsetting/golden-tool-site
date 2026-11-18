@@ -53,7 +53,7 @@
 <style>
 [data-timed-style]{display:revert !important}
 #vu .vu-bar{opacity:1 !important}
-.vu-skip,.vu-pill,.vu-spin,.vu-big,.vu-hit{display:none !important}
+.vu-skip,.vu-pill,.vu-spin{display:none !important}
 #vuVideo{width:100%;max-width:450px;display:block;margin:0 auto;height:auto}
 </style>
 </head>
@@ -199,9 +199,9 @@
 <div class="vu-old" id="vuOld"></div>
 
 <div class="vu" id="vu" data-up="up1" data-media="/media/vsl-up/t/torj1a.i0topodazk5tof.5Naj2U6kGh79CAT4asUY0Q/up1/a/" data-dur="922.4">
-  <video id="vuVideo" controls playsinline preload="metadata" poster="assets/vsl-poster.jpg" src="https://pub-e639dccfb0e2456e8b5062082d11420a.r2.dev/up3/vsl.mp4"></video>
+  <video id="vuVideo" playsinline preload="metadata" poster="assets/vsl-poster.jpg" src="https://pub-e639dccfb0e2456e8b5062082d11420a.r2.dev/up3/vsl.mp4"></video>
   <div class="vu-bar"><i id="vuBar"></i></div>
-  <button type="button" class="vu-hit" id="vuHit" aria-label="Play the message"></button>
+  <button type="button" class="vu-hit vu-paused" id="vuHit" aria-label="Play the message"><span class="vu-big"><i></i></span></button><script>(function(){var v=document.getElementById('vuVideo'),h=document.getElementById('vuHit'),b=document.getElementById('vuBar');function s(){var p=v.paused||v.ended;h.classList.toggle('vu-paused',p);h.firstElementChild.style.display=p?'':'none';h.setAttribute('aria-label',p?'Play the message':'Pause the message')}h.onclick=function(){if(v.paused||v.ended){v.play()}else{v.pause()}};v.onplay=v.onpause=v.onended=s;v.ontimeupdate=function(){b.style.transform='scaleX('+(v.currentTime/v.duration||0)+')'};s()})();</script>
   
   <div class="vu-res" id="vuRes" hidden>
     <div class="vu-res-card">
