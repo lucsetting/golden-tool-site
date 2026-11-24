@@ -2,7 +2,7 @@
 <!--
   GOLDEN TOOL — SALES PAGE
   Values to edit before launch (search & replace across index.html and thank-you/index.html):
-    CHECKOUT URL   #checkout   (every CTA; set the real order-form URL when the payment platform is connected)
+    CHECKOUT URL   https://www.checkout-ds24.com/product/772944   (every CTA; Digistore24 order form, product 772944 — same id as the promo script before </body>)
     APP URL        https://app.thegoldentool.us/           (thank-you page "Open Golden Tool")
     SUPPORT EMAIL  office@nevian.io
     PRICE          $37 one-time · 12 months of access included
@@ -34,7 +34,7 @@
     <a class="brand" href="./"><img src="assets/logo.png" alt="" width="28" height="28">Golden Tool</a>
     <div class="hd-right">
       <span class="pill"><b>60-day</b> money-back guarantee</span>
-      <a class="btn btn-sm" href="#checkout">Get Golden Tool</a>
+      <a class="btn btn-sm" href="https://www.checkout-ds24.com/product/772944">Get Golden Tool</a>
     </div>
   </div>
 </header>
@@ -46,7 +46,7 @@
     <span class="eyebrow">Monthly spending control</span>
     <h1>Know exactly <em>where</em> your money goes.</h1>
     <p class="lede">Set one monthly limit. Log each expense in about five seconds. Golden Tool shows your pace, what's safe to spend today, and where the rest went.</p>
-    <a class="btn" href="#checkout">Get Golden Tool — $37</a>
+    <a class="btn" href="https://www.checkout-ds24.com/product/772944">Get Golden Tool — $37</a>
     <p class="price-line"><b>$37 one-time</b><span class="dot"></span>12 months of access<span class="dot"></span>60-day money-back guarantee</p>
     <p class="trust-line">Works on iPhone, Android and desktop. Instant access after checkout.</p>
   </div>
@@ -182,7 +182,7 @@
         <div><dt>Payment</dt><dd>one time, secure checkout</dd></div>
       </dl>
       <div class="total"><span>Total, one-time</span><b><sup>$</sup>37</b></div>
-      <a class="btn btn-block" href="#checkout">Get Golden Tool — $37 one&#8209;time</a>
+      <a class="btn btn-block" href="https://www.checkout-ds24.com/product/772944">Get Golden Tool — $37 one&#8209;time</a>
       <p class="fine">Secure checkout. Instant access. 60-day money-back guarantee.</p>
     </div>
   </div>
@@ -267,8 +267,14 @@
 
 <div class="sticky">
   <div class="p"><b>$37</b>one-time</div>
-  <a class="btn" href="#checkout">Get Golden Tool</a>
+  <a class="btn" href="https://www.checkout-ds24.com/product/772944">Get Golden Tool</a>
 </div>
+
+<!-- Digistore24 promo pixel (Digital Storm): carries the affiliate/campaign on every checkout link -->
+<script src="https://www.digistore24-scripts.com/service/digistore.js"></script>
+<script type="text/javascript">
+digistorePromocode( { "product_id": 772944, "adjust_all_urls": true, "adjust_domain": true } );
+</script>
 
 </body>
 </html>

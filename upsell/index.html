@@ -9,6 +9,9 @@
 <meta name="theme-color" content="#F5F5F7">
 <link rel="icon" href="../assets/logo.png">
 <link rel="stylesheet" href="../styles.css">
+<!-- Digistore24 upsell (Digital Storm): fills the order session into the yes/no links below -->
+<script src="https://www.digistore24-scripts.com/service/digistore.js"></script>
+<script>digistoreUpsell()</script>
 </head>
 <body class="up">
 <div class="up-top">
@@ -23,24 +26,10 @@
     <figure class="up-shot"><img src="../assets/app-debts.png" alt="Golden Freedom inside Golden Tool" width="1440" height="900" loading="eager"></figure>
     <ul class="up-feats"><li><b>Debt-free date</b><span>the month each balance hits zero, on one chart</span></li><li><b>Snowball and avalanche</b><span>side by side, with the date and the interest of each</span></li><li><b>What-if</b><span>try an extra amount per month or a one-off payment, then make it the plan</span></li><li><b>Payment log</b><span>each payment lowers its balance and shows if you are ahead or behind</span></li><li><b>Minimum-only cost</b><span>what paying only the minimum costs, in months and in interest</span></li><li><b>Payment schedule</b><span>month by month until the last one, no spreadsheet</span></li></ul>
     <p class="up-price"><b>$47 one time</b>, added to your order. Unlocks in the app on the account you sign in with. Covered by the same 60-day guarantee.</p>
-    <a id="yes" class="btn" href="#">Yes, add Golden Freedom — $47</a>
-    <a id="no" class="up-no" href="../upsell2/">No thanks, I&#x27;ll handle my debts without it</a>
+    <a id="yes" class="btn" href="https://www.checkout-ds24.com/answer/yes?template=light">Yes, add Golden Freedom — $47</a>
+    <a id="no" class="up-no" href="https://www.checkout-ds24.com/answer/no">No thanks, I&#x27;ll handle my debts without it</a>
   </section>
   <p class="up-fine">Clicking yes adds Golden Freedom to the order you just placed, using the same payment method. No new checkout form.</p>
-<script>
-  // One-click answer links. ACCEPT/DECLINE are filled in when the payment platform is connected;
-  // until then "yes" is a placeholder and "no" continues to the next step.
-  (function(){
-    var ACCEPT = '';   // pattern with {sid}
-    var DECLINE = '';  // pattern with {sid}
-    var q = new URLSearchParams(location.search);
-    var sid = q.get('upsell_session') || q.get('session') || '';
-    var yes = document.getElementById('yes'), no = document.getElementById('no');
-    if (ACCEPT && sid) yes.href = ACCEPT.replace('{sid}', encodeURIComponent(sid));
-    else yes.addEventListener('click', function(e){ e.preventDefault(); });
-    if (DECLINE && sid) no.href = DECLINE.replace('{sid}', encodeURIComponent(sid));
-  })();
-</script>
 </main>
 <footer class="up-foot">
   <a href="../privacy-policy.html">Privacy Policy</a>
